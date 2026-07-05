@@ -9323,8 +9323,6 @@
 			"used_by_classes"
 			{
 				"medic" "1"
-			{
-				"medic" "1"
 			}
 			"static_attrs"
 			{
