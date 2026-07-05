@@ -11426,5 +11426,196 @@
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}		
+		
+}
+	
+	"attributes"
+	{
+//unused tf2/tf2c attributes
+		"323"
+		{
+			"name"					"attack projectiles"
+			"attribute_class"		"attack_projectiles"
+			"description_string"	"Goal Keeping: Bullets destroy rockets and grenades mid-air."
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}		
+		"4360"
+		{
+			"name"					"firing forward pull"
+			"attribute_class"		"firing_forward_pull"
+			"description_string"	"While firing: Get pulled forward in the direction of aiming and gain a speed boost"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4361"
+		{
+			"name"					"mod projectile heat seek power"
+			"attribute_class"		"mod_projectile_heat_seek_power"
+			"description_string"	"Flares home-in on burning targets"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4362"
+		{
+			"name"					"manncannon main attribute DISPLAY ONLY"
+			"attribute_class"		"mult_sniper_charge_base_dummy"
+			"description_string"	"On Full Charge: Headshots damage nearby enemies in a radius"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4363"
+		{
+			"name"					"civ gun DISPLAY ONLY"
+			"attribute_class"		"mult_sniper_charge_base_dummy"
+			"description_string"	"Cost of Doing Business: Damage done to enemy Civilians will always crit"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4364"
+		{
+			"name"					"civ boost targets enemies"
+			"attribute_class"		"add_civ_boost_enemies"
+			"description_string"	"Alt-Fire: Give an enemy a deadly condition"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4365"
+		{
+			"name"					"silent killer welrod"
+			"attribute_class"		"set_silent_killer"
+			"description_string"	"Silent Killer: Completely silences enemy screams on kill"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4366"
+		{
+			"name"					"easter island description negative DISPLAY ONLY"
+			"attribute_class"		"mult_sniper_charge_base_dummy"
+			"description_string"	"-33% movement speed while scoped in"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"4367"
+		{
+			"name"					"crit while disguised welrod"
+			"attribute_class"		"crit_while_disguised"
+			"description_string"	"Deal critical damage while disguised"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4368"
+		{
+			"name"					"crit take while disguised welrod"
+			"attribute_class"		"crit_take_while_disguised"
+			"description_string"	"While active: Take critical damage while disguised"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"4369"
+		{
+			"name"					"battering cannon DISPLAY ONLY"
+			"attribute_class"		"mult_sniper_charge_base_dummy"
+			"description_string"	"Rockets deal heavy knockback on impact, and when rocket jumping"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4370"
+		{
+			"name"					"mult airblast cone scale"
+			"attribute_class"		"mult_airblast_cone_scale"
+			"description_string"	"+%s1% airblast width"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"4371"
+		{
+			"name"					"viewfinder explain"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"On Scoped Hit: Broadcast player location globally for 8 seconds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4372"
+		{
+			"name"					"viewfinder downside explain"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"No headshots"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"4373"
+		{
+			"name"					"no death from headshots"
+			"attribute_class"		"no_death_from_headshots"
+			"description_string"	"The wear cannot be killed by headshots"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4374"
+		{
+			"name"					"clipsize increase on kill textonly"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"Clip size increases on kill"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4375"
+		{
+			"name"					"mult dmg with reduced health"
+			"attribute_class"		"mult_dmg_with_reduced_health"
+			"description_string"	"Damage and move speed increase as the user becomes injured"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4376"
+		{
+			"name"					"engineer revolver textonly"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"This weapon functions identically to the Revolver"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}			
+		"4377"
+		{
+			"name"					"hubbard building condition textonly"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"Rain Hell: Gain 8 seconds of Revenge Mini-Crits when an enemy destroys a Lvl. 3 building of yours"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"			
+		}
+		"4378"
+		{
+			"name"					"duplequation textonly"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"Shotgun inflicts knockback to self when shot"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"			
+		}
+		"4379"
+		{
+			"name"					"swatter textonly"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"Swatting while airborne will propel the wielder upwards"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"			
+		}
+		"4380"
+		{
+			"name"					"velocity attribute textonly"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"On Hit Enemy: Knock player upwards a short amount"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"			
+		}
+		"4381"
+		{
+			"name"					"airblast dashes"
+			"attribute_class"		"airblast_dashes"
+			"description_string"	"Alt-Fire: Launch yourself forward with a compressed airblast. Cannot airblast enemies or projectiles."
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+			"stored_as_integer"		"1"
+		}		
 	}
 }
