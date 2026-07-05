@@ -1,0 +1,40 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models\weapons\c_items\c_magnetcontroller_blue"
+	"$bumpmap" "models\weapons\c_items\c_magnetcontroller_normals"
+	
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost" "6"	
+	"$lightwarptexture" "models/lightwarps/weapon_lightwarp"
+	"$phongfresnelranges" "[.4 .6 1]"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "20"
+	"$rimlightboost" "1"
+	
+	"$glowcolor" "1"
+	
+	// Cloaking
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+	}
+}

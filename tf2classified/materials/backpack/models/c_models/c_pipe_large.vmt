@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture"		"backpack/models/c_models/c_pipe_large"
+	"$translucent"		"1"
+	"$vertexcolor"		"1"
+}

@@ -1,0 +1,60 @@
+"VertexlitGeneric"
+{
+	"$baseTexture" "vgui/replay/thumbnails/models/player/items/sniper/0x04f0d52c/sniper_moai/sniper_moai_color"
+	"$bumpmap" "vgui/replay/thumbnails/models/player/items/sniper/0x04f0d52c/sniper_moai/sniper_moai_normal"
+
+	"$detail" "effects/tiledfire/fireLayeredSlowTiled512"
+	"$detailscale" "5"
+	"$detailblendfactor" .01
+	"$detailblendmode" 6
+
+	"$yellow" "0"
+	
+	"$rimlight" "1"
+	"$rimlightexponent" "1"
+	"$rimlightboost" "3"
+	"$rimmask" "1"
+	
+	"$phong" "1"
+	"$phongexponent" "0.3"
+	"$phongboost" "0.2"	
+	"$lightwarptexture" "models/player/pyro/pyro_lightwarp"
+	//"$lightwarptexture" "models/weapons/c_items/c_ambassador_lightwarp"
+	"$phongfresnelranges"	"[0.25 0.25 0.25]"
+	"$phongexponenttexture" "vgui/replay/thumbnails/models/player/items/sniper/0x04f0d52c/sniper_moai/sniper_moai_normal"
+	"$NormalmapAlphaPhongMask" "1"
+	"$halflambert" "1"
+	
+
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"weapon_invis"
+		{
+		}
+
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$detail"
+			"animatedtextureframenumvar" "$detailframe"
+			"animatedtextureframerate" 30
+		}
+
+		"BurnLevel"
+		{
+			"resultVar" "$detailblendfactor"
+		}
+
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+
+		"Equals"
+		{
+			"srcVar1" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

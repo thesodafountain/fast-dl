@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "backpack/workshop/player/items/sniper/sniper_maoi/sniper_maoi"
+	"$translucent" 1
+	"$vertexcolor" 1
+}

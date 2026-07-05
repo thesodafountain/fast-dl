@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/c_models/c_minigun/chainsaw"
+	"$translucent" 0
+}

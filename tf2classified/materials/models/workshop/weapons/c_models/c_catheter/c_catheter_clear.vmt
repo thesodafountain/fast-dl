@@ -1,0 +1,78 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\workshop\weapons\c_models\c_catheter\c_catheter_main"
+	"$bumpmap" "models\workshop\weapons\c_models\c_catheter\c_catheter_main_normal"
+
+//	"$envmapmaskbasealpha" "1"
+//	"$envmap" env_cubemap
+//	"$envmaptint" "[.25 .25 0]"
+	
+	"$translucent" "1"
+//	"$alphatest" "1"
+
+	"$phong" "1"
+	"$phongexponent" "140"
+	"$phongboost" "1337"	
+//	"$phongtint" "[.75 .75 .20]"
+
+//	"$lightwarptexture"		"models/player/pyro/pyro_lightwarp"
+//	"$lightwarptexture" "models\lightwarps\jarate_lightwarp"
+	"$lightwarptexture" "models\lightwarps\weapon_lightwarp"
+
+	"$phongfresnelranges"	"[.25 .5 1]"
+	"$halflambert" "1"
+
+
+
+	// Rim lighting parameters
+//	"$rimlight" "1"			
+//	"$rimlightexponent" "4"	
+//	"$rimlightboost" "25"
+//	"$rimmask" "1"
+
+	"360?$color2" "[ 0.5 0.5 0.5 ]"
+
+	"$glowcolor" "1"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+	"$yellow" "0"
+
+	"Proxies"
+	{
+		"AnimatedWeaponSheen"
+		{
+			"animatedtexturevar" 		"$sheenmapmask"
+			"animatedtextureframenumvar" 	"$sheenmapmaskframe"
+			"animatedtextureframerate" 		"40"
+		}
+		"invis"
+		{
+		}
+		"ModelGlowColor"
+		{
+			"resultVar" "$glowcolor"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$selfillumtint"
+		}
+		"Equals"
+		{
+			"srcVar1"  "$glowcolor"
+			"resultVar" "$color2"
+		}
+		"YellowLevel"
+		{
+			"resultVar" "$yellow"
+		}
+		"Multiply"
+		{
+			"srcVar1" "$color2"
+			"srcVar2" "$yellow"
+			"resultVar" "$color2"
+		}
+	}
+}

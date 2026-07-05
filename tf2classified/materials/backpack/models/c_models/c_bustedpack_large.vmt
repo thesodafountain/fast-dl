@@ -1,0 +1,10 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"backpack\models\c_models\c_bustedpack"
+	"$translucent"	"1"
+	"$vertexcolor"	"1"
+	"$vertexalpha"	"1"
+	"$nolod"		"1"
+	"$ignorez"	"1"
+}
+
