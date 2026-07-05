@@ -371,9 +371,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/hl1/cbar_hitbod1.wav"
-		"wave"		"weapons/hl1/cbar_hitbod2.wav"
-		"wave"		"weapons/hl1/cbar_hitbod3.wav"
+		"wave"		"weapons/hl1_cbar_hitbod1.wav"
+		"wave"		"weapons/hl1_cbar_hitbod2.wav"
+		"wave"		"weapons/hl1_cbar_hitbod3.wav"
 	}
 }
 
@@ -384,8 +384,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/hl1/cbar_hit1.wav"
-		"wave"		"weapons/hl1/cbar_hit2.wav"
+		"wave"		"weapons/hl1_cbar_hit1.wav"
+		"wave"		"weapons/hl1_cbar_hit2.wav"
 	}
 }
 
@@ -397,8 +397,8 @@
 
 	"rndwave"
 	{
-		"wave"		"weapons/hl1/cbar_hit1.wav"
-		"wave"		"weapons/hl1/cbar_hit2.wav"
+		"wave"		"weapons/hl1_cbar_hit1.wav"
+		"wave"		"weapons/hl1_cbar_hit2.wav"
 	}
 }
 
