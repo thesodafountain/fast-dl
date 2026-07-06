@@ -1,0 +1,14 @@
+"Patch"
+{
+	include "materials/models/buildables/mini_sentry/mini_sentry_green.vmt"
+	
+	insert
+	{
+	>=dx90
+	{
+	"$selfillummask"	"models/buildables/sentry1/sentry1_light"
+	"$selfillumtint" "[1 10 1]"
+	"$selfillum" "1"
+	}
+	}
+}

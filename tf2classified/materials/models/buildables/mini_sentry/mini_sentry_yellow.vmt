@@ -1,0 +1,13 @@
+"Patch"
+{
+	include "materials/models/buildables/mini_sentry/mini_sentry.vmt"
+	
+	insert
+	{
+		"$basetexture"	"models/buildables/mini_sentry/mini_sentry_yellow"
+		>=dx90
+		{
+			"$selfillumtint" "[8 8 1]"
+		}
+	}
+}
