@@ -3883,7 +3883,7 @@
 				"can_craft_count" "1"
 			}
 			"base_item_name" "The Red-Tape Recorder"
-			"enabled" "0"
+			"enabled" "1"
 			"item_class" "tf_weapon_sapper"
 			"craft_class" "weapon"
 			"craft_material_type" "weapon"
@@ -11977,71 +11977,6 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"			"ui/item_light_gun_drop.wav"
-		}
-		"52" // The Huntsman
-		{
-			"name"				"The Huntsman"
-			"item_name"			"#TF_Weapon_Huntsman"
-			"item_type_name"	"#TF_Weapon_Bow"
-			"item_description"	"#TF_Weapon_Huntsman_Desc"
-			"item_quality"		"normal"
-			"propername"		"1"
-
-			"item_class"	"tf_weapon_compound_bow"
-			"item_slot"		"primary"
-			"extra_wearable" "models/player/items/sniper_arrows.mdl"
-			"used_by_classes"
-			{
-				"Sniper"	"1"
-			}
-			"attributes"
-			{
-				"special taunt"
-				{
-					"attribute_class"	"special_taunt"
-					"value"				"1"
-				}
-				"hidden separator" "1"				
-                "mod sniper zoom while jumping"
-				{
-					"attribute_class"	"mod_sniper_zoom_while_jumping"
-					"value"				"1"
-				}				
-				"allowed in medieval mode"
-				{
-					"attribute_class"	"allowed_in_medieval_mode"
-					"value"				"1"
-				}
-			}
-
-			"model_player"		"models/weapons/v_models/v_bow.mdl"
-			"model_world"		"models/weapons/w_models/w_bow.mdl"
-			"anim_slot"			"item2"
-			"attach_to_hands"	"2"
-
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 -4 -10"
-				"class select override vcd"		"class_select_huntsman"
-			}
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"arrows"		"1"
-				}
-				"animation_replacement"
-				{
-					"ACT_PRIMARY_VM_INSPECT_START"	"ACT_ITEM2_VM_INSPECT_START"
-					"ACT_PRIMARY_VM_INSPECT_IDLE"	"ACT_ITEM2_VM_INSPECT_IDLE"
-					"ACT_PRIMARY_VM_INSPECT_END"	"ACT_ITEM2_VM_INSPECT_END"
-				}
-			}
-			"item_iconname"		"huntsman"
-
-			"image_inventory"		"backpack/weapons/w_models/w_bow"
-			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
-			"drop_sound"			"ui/item_wood_pole_drop.wav"
 		}
 		"8025"
 		{
