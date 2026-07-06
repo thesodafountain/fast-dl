@@ -1,6 +1,0 @@
-"UnlitGeneric"
-{
-	"$baseTexture" "backpack\workshop\weapons\c_models\c_drillmaster/c_drillmaster"
-	$translucent 1
-	"$vertexcolor" 1
-}
