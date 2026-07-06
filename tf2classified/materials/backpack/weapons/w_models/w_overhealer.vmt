@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack/weapons/w_models/w_overhealer"
+	"$translucent" 1
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$ignorez" 1
+}
