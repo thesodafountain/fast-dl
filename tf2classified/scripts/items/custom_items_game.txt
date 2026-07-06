@@ -9395,7 +9395,7 @@
 			"image_inventory_size_h" "82"
 			"model_player" "models/weapons/v_models/v_quickfix_medic.mdl"
 			"model_world" "models/weapons/w_models/w_quickfix.mdl"			
-			"extra_wearable" "models/player/items/new/quickfix_backpack.mdl"
+			"extra_wearable" "models/player/items/quickfix_backpack.mdl"
 			"attach_to_hands" "2"
 			"item_quality" "unique"
 			"min_ilevel" "8"
@@ -12755,7 +12755,7 @@
 			"item_type_name"			"Toolbox"
 			"item_description"			"For all your on-the-go engineering engi-needs."
 			"image_inventory"			"backpack/workshop/player/items/engineer/builders_toolkit/builders_toolkit"
-			"model_player"				"models/player/items/new/engineer_builders_toolkit.mdl"
+			"model_player"				"models/player/items/engineer_builders_toolkit.mdl"
 			"drop_type"					"drop"												
 			"used_by_classes"
 			{
