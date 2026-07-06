@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"models\weapons\c_items\Booster_Backpack\banner_blu"
+
+	"$phong" "1"
+	"$phongexponent" "5"
+	"$phongboost" "2"	
+	"$lightwarptexture" "models\player\pyro\pyro_lightwarp"
+	"$phongfresnelranges"	"[1.5 .5 3]"
+	"halflambert" "1"
+	"$basemapalphaphongmask" "1"
+	
+	"$rimlight" "1"						
+	"$rimlightexponent" "20"				
+	"$rimlightboost" ".25"
+
+	"$basephongexponent" "15"
+	"$basephongboost" "3"
+
+	// Cloaking
+	"$cloakPassEnabled" "1"
+
+}

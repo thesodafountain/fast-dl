@@ -1,0 +1,5 @@
+"UnlitGeneric"
+{
+	"$basetexture" "backpack/workshop/models/c_models/jarate_backstab_shield"
+	"$translucent" 1
+}
