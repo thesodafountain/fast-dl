@@ -3884,7 +3884,7 @@
 			}
 			"base_item_name" "The Red-Tape Recorder"
 			"enabled" "1"
-			"item_class" "tf_weapon_sapper"
+			"item_class" "tf_weapon_builder"
 			"craft_class" "weapon"
 			"craft_material_type" "weapon"
 			"show_in_armory" "1"
@@ -3901,7 +3901,8 @@
 			"anim_slot" "building"
 			"attach_to_hands" "1"
 			"propername" "1"
-			"model_player" "models/workshop_partner/weapons/c_models/c_sd_sapper/c_sd_sapper.mdl"
+			"model_world"				"models/weapons/w_models/w_sd_sapper.mdl"
+			"model_player"				"models/weapons/v_models/v_sd_sapper_spy.mdl"	
 			"xifier_class_remap" "red_tape_recorder"
 			"used_by_classes"
 			{
@@ -9493,6 +9494,161 @@
 			"mouse_pressed_sound"		"#ui/item_heavy_gun_pickup.wav"
 			"drop_sound"				"#ui/item_heavy_gun_drop.wav"
 		}
+		"998"
+		{
+			"name" "The Vaccinator"
+			"first_sale_date" "2012/12/19"
+			"item_class" "tf_weapon_medigun"
+			"craft_class" "weapon"
+			"craft_material_type" "weapon"
+			"capabilities"
+			{
+				"nameable" "1"
+			}
+			"tags"
+			{
+				"can_heal_allies" "1"
+				"can_be_festivized" "1"
+			}
+			"show_in_armory" "1"
+			"item_type_name" "#TF_Weapon_Medigun_Resist"
+			"item_name" "#TF_Unique_MediGun_Resist"
+			"item_description" "ÜberCharge provides a 2.5 second resistance bubble that blocks 50% base damage and 100% crit damage of the selected type to the Medic and Patient"
+			"propername" "1"
+			"item_slot" "secondary"
+			"equip_region" "medigun_backpack"
+			"image_inventory" "backpack/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"model_player" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense.mdl"
+			"extra_wearable" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defensepack.mdl"
+			"attach_to_hands" "1"
+			"item_quality" "unique"
+			"min_ilevel" "8"
+			"max_ilevel" "8"
+			"used_by_classes"
+			{
+				"medic" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -9"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class" "set_weapon_mode"
+					"value" "3"
+				}
+				"ubercharge rate bonus"
+				{
+					"attribute_class" "mult_medigun_uberchargerate"
+					"value" "1.67"
+				}
+				"kill eater score type"
+				{
+					"attribute_class" "kill_eater_score_type"
+					"value" "1"
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class" "kill_eater_score_type_2"
+					"value" "2"
+				}
+				"medigun charge is resists"
+				{
+					"attribute_class" "set_charge_type"
+					"value" "3"
+				}
+				"medigun bullet resist passive"
+				{
+					"attribute_class" "medigun_bullet_resist_passive"
+					"value" "0.1"
+				}
+				"medigun bullet resist deployed"
+				{
+					"attribute_class" "medigun_bullet_resist_deployed"
+					"value" "0.50"
+				}
+				"medigun blast resist passive"
+				{
+					"attribute_class" "medigun_blast_resist_passive"
+					"value" "0.1"
+				}
+				"medigun blast resist deployed"
+				{
+					"attribute_class" "medigun_blast_resist_deployed"
+					"value" "0.50"
+				}
+				"medigun fire resist passive"
+				{
+					"attribute_class" "medigun_fire_resist_passive"
+					"value" "0.1"
+				}
+				"medigun fire resist deployed"
+				{
+					"attribute_class" "medigun_fire_resist_deployed"
+					"value" "0.50"
+				}
+				"ubercharge overheal rate penalty"
+				{
+					"attribute_class" "mult_medigun_overheal_uberchargerate"
+					"value" "0.67"
+				}
+				"overheal fill rate reduced"
+				{
+					"attribute_class" "overheal_fill_rate"
+					"value" "0.34"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"medic_backpack" "1"
+				}
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense_festivizer.mdl"
+					}
+				}
+			}
+			"visuals_red"
+			{
+				"skin" "0"
+				"custom_particlesystem"
+				{
+					"system" "medicgun_beam_attrib_overheal_red"
+				}
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense_festivizer.mdl"
+					}
+				}
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+				"custom_particlesystem"
+				{
+					"system" "medicgun_beam_attrib_overheal_blue"
+				}
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense_festivizer.mdl"
+					}
+				}
+			}
+			"mouse_pressed_sound" "ui/item_heavy_gun_pickup.wav"
+			"drop_sound" "ui/item_heavy_gun_drop.wav"
+		}		
 		"173"
 		{
 			"name" "The Vita-Saw"
