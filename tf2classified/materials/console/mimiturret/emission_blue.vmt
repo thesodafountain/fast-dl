@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "console/mimiturret/Emission_blu"
+    "$nocull" "1"
+    "$selfillum" "5"
+    "$selfillummask" "console/mimiturret/Emission_Red"
+    "$selfiummtint" "200 200 200"
+    "$nodecal" "1"
+    "$model" "1"
+}
