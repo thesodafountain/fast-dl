@@ -2635,6 +2635,11 @@
 					"attribute_class" "mult_minigun_spinup_time"
 					"value" "0.8"
 				}
+				"weapon spread bonus"
+				{
+					"attribute_class" "mult_spread_scale"
+					"value" "0.8"
+				}				
 				"minigun no spin sounds"
 				{
 					"attribute_class" "minigun_no_spin_sounds"
@@ -2644,11 +2649,6 @@
 				{
 					"attribute_class" "mult_postfiredelay"
 					"value" "1.2"
-				}
-				"weapon spread bonus"
-				{
-					"attribute_class" "mult_spread_scale"
-					"value" "0.8"
 				}
 			}
 		}
@@ -13030,7 +13030,43 @@
 			}
 			"mouse_pressed_sound" "ui/item_pack_pickup.wav"
 			"drop_sound" "ui/item_pack_drop.wav"
-		}				
+		}
+		"8044" // PDA: Mini Dispenser (Construction PDA)
+		{
+			"name"				"PDA: MINIDISPENSER"
+			"item_name"			"PDA: MINIDISPENSER" // For now
+			"item_type_name"	"#TF_Weapon_ConstructionPDA"
+			"item_description"	"Mini Dispensers up my ass brah"
+			"item_quality"		"Rarity2"
+
+			"item_class"	"tf_weapon_pda_engineer_build"
+			"item_slot"		"pda"
+			"used_by_classes"
+			{
+				"Engineer"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_builder_engineer.mdl"
+			"model_world"		"models/weapons/w_models/w_builder.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"	"10 0 -10"
+			}
+			"attributes"
+			{
+				"replaces dispenser with mini dispenser"
+				{
+					"attribute_class" "dummy"
+					"value" "1.0"
+				}
+			}			
+             			
+
+			"image_inventory"		"backpack/weapons/w_models/w_builder"
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"			"ui/item_helmet_pickup.wav"
+		}		
 	}
 	"attributes"
 	{
@@ -13211,15 +13247,80 @@
 			"description_format"	"value_is_additive"
 			"effect_type"			"positive"			
 		}
-		"7001"
+        "8000"
 		{
-			"name"	"mini sentry models fix"
-			"attribute_class"	"mini_sentry_models_fix"
-  
+			"name"					"explosive headshots" 
+			"description_string"	"Explosive headshots"
 			"description_format"	"value_is_additive"
-			"hidden"	"1"
-			"effect_type"	"positive"
-			"stored_as_integer"	"1"
-		}		
+			"effect_type"			"positive"
+		}
+		"8001"
+		{
+			"name"					"replaces dispenser with amplifier"
+			"description_string"	"Replaces Dispenser with the Amplifier: This building does not restore health, ammunition, or metal. Allies near the Amplifier receive mini-crits and are marked with a death mark."
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"8002"
+		{
+			"name"					"replaces sentry with hl sentry"
+			"description_string"	"Replaces the Sentry with the HL Sentry" 
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"8003"
+		{
+			"name"					"replaces dispenser with mini dispenser"
+			"description_string"	"Replaces the Dispenser with the Mini-Dispenser: Lower cost and faster construction speed, but cannot be upgraded."
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"8004"
+		{
+			"name"					"replaces sentry with artillery sentry"
+			"description_string"	"Replaces the Sentry with the Artillery Sentry: More powerful, but more expensive to upgrade."
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"8005"
+		{
+			"name"					"replaces sentry with sniper sentry"
+			"description_string"	"Replaces the Sentry with the Sniper Sentry: Reduced rate of fire balanced by increased damage output."
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"8006"
+		{
+			"name"					"engy sentry fire rate decreased"
+			"attribute_class"		"mult_sentry_firerate"
+			"description_string"	"%s1% sentry fire rate decreased"
+			"hidden"	"0"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"8007"
+		{
+			"name"					"engy sentry damage penalty"
+			"attribute_class"		"mult_engy_sentry_damage"
+			"description_string"	"%s1% sentry damage penalty"
+			"description_format"	"value_is_percentage"
+			"hidden"	"0"
+			"effect_type"	"negative"
+			"stored_as_integer"	"0"
+		}
+		"8008"
+		{
+			"name"					"replaces teleporter with mini teleporter"
+			"description_string"	"Replaces the Teleporter with mini teleporter."
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"8009"
+		{
+			"name"					"replaces sentry with mimi sentry"
+			"description_string"	"Replaces sentry with Mimi sentry UwU"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
 	}
 }
