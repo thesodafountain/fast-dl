@@ -1,8 +1,0 @@
-"UnlitGeneric"
-{
-	"$basetexture"	"vgui/replay/thumbnails/models/buildables/mini_dispenser/minidisp_blueprint_model"
-	"$surfaceprop"	"no_decal"
-	"$translucent"	1
-	"$model"		1
-	"$nocull"		1
-}
