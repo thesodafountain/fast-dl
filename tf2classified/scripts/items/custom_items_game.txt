@@ -9024,11 +9024,6 @@
 					"attribute_class" "special_taunt"
 					"value" "1"
 				}
-				"mini sentry models fix"
-				{
-				"attribute_class"	"mini_sentry_models_fix"
-				"value" "1"
-				}
 			}
 			"visuals"
 			{
