@@ -13228,12 +13228,13 @@ Alt-fire: Share some cake with a friend (Medium Health Kit)"
 					"attribute_class" "apply_z_velocity_on_damage"
 					"value" "0.4"
 				}					
-				"hidden separator"		"1"
-				"deflect on smack hidden"
+			     "hidden separator"        "1"
+                "deflect on swing"
                 {
-                    "attribute_class"    "deflect_on_smack"
+                    "attribute_class"    "deflect_on_swing"
                     "value"                "1"
-                }			
+                }
+            }			
 			}
 			"visuals"
 			{
