@@ -11615,21 +11615,11 @@
 					"attribute_class" "bodyshot_damage_modify"
 					"value" "0.75"
 				}
-				"fire rate penalty"
-				{
-					"attribute_class" "mult_postfiredelay"
-					"value" "1.15"
-				}
 				"crit mod disabled"
 				{
 					"attribute_class" "mult_crit_chance"
 					"value" "0"
-				}				
-				"single wep deploy time increased"
-				{
-					"attribute_class" "mult_single_wep_deploy_time"
-					"value" "1.30"
-				}				
+				}								
 				"hidden separator" "1"
 				"spread penalty"
 				{
@@ -11640,6 +11630,16 @@
 				{
 					"attribute_class" "mult_spread_scale_first_shot"
 					"value" "0"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class" "mult_postfiredelay"
+					"value" "1.15"
+				}
+				"single wep deploy time increased"
+				{
+					"attribute_class" "mult_single_wep_deploy_time"
+					"value" "1.30"
 				}				
 			}
 			"used_by_classes"
@@ -13025,7 +13025,229 @@
 			}
 			"mouse_pressed_sound" "ui/item_pack_pickup.wav"
 			"drop_sound" "ui/item_pack_drop.wav"
-		}	
+		}
+		"8044"
+		{
+			"name" "The Walkabout"
+			"item_name" "Walkabout"
+			"item_class" "tf_weapon_sniperrifle"
+			"item_logname" "walkabout"
+			"item_iconname" "walkabout"
+			"show_in_armory" "1"
+			"item_type_name" "#TF_Weapon_SniperRifle"
+			"item_name" "Walkabout"
+			"item_description" "For when you want it on the go."
+			"item_slot" "primary"
+			"item_quality" "Rarity2"
+			"propername" "1"
+			"min_ilevel" "1"
+			"max_ilevel" "1"
+			"image_inventory" "backpack/weapons/c_models/c_walkabout/c_walkabout"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"model_player" "models/weapons/c_models/c_walkabout/c_walkabout.mdl"
+			"attach_to_hands" "1"
+			"visuals"
+			{
+				"sound_single_shot" "Weapon_Walkabout.Single"
+				"sound_burst" "Weapon_Walkabout.SingleCrit"
+			}
+			"used_by_classes"
+			{
+				"sniper" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "5 0 -8"
+			}
+			"mouse_pressed_sound" "ui/item_heavy_gun_pickup.wav"
+			"drop_sound" "ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"walkabout scopedin"
+				{
+					"attribute_class" "mult_sniper_charge_per_sec_with_enemy_under_crosshair"
+					"value" "100"
+				}
+				"walkabout DISPLAY ONLY"
+				{
+					"attribute_class" "mult_sniper_charge_base_dummy"
+					"value" "2"
+				}							
+				"sniper zoom penalty"
+				{
+					"attribute_class"	"mult_zoom_fov"
+					"value"				"0.3"
+				}			
+				"sniper no headshots"
+				{
+					"attribute_class" "set_weapon_mode"
+					"value" "1"
+				}
+				"hidden separator"		"1"
+				"aiming movespeed increased"
+				{
+					"attribute_class" "mult_player_aiming_movespeed"
+					"value" "900"
+				}
+				"sniper charge per sec"
+				{
+					"attribute_class" "mult_sniper_charge_per_sec"
+					"value" "0"
+				}
+			}
+		}
+		"8045"
+		{
+			"name" "The Godovshchina"
+			"prefab" "weapon_lunchbox"
+			"item_name" "Godovshchina"
+			"item_quality" "Rarity2"			
+			"item_description" "Eat to heal yourself and nearby teammates.
+Alt-fire: Share some cake with a friend (Medium Health Kit)"
+			"image_inventory" "backpack/workshop/weapons/c_models/c_cake/c_cake"
+			"model_player" "models/workshop/weapons/c_models/c_cake/c_cake.mdl"
+			"extra_wearable"		"models/player/items/all_class/bdayhat_heavy.mdl"			
+			"propername" "1"
+			"inspect_panel_dist" "31"
+			"used_by_classes"
+			{
+				"heavy" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -11"
+				"item_meter_charge_type" "1"
+				"item_meter_charge_rate" "10"
+				"meter_label" "#TF_Sandwich"
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class" "kill_eater_score_type"
+					"value" "50"
+				}
+				"lunchbox add condition on eat"
+				{
+					"attribute_class" "lunchbox_addcond"
+					"value" "55 8"
+				}
+				"lunchbox force cooldown"
+				{
+					"attribute_class" "lunchbox_force_cooldown"
+					"value" "1"
+				}
+				"lunchbox healing decreased"
+				{
+					"attribute_class" "lunchbox_healing_scale"
+					"value" "0.25"
+				}
+				"custom lunchbox throwable model"
+				{
+					"attribute_class" "custom_lunchbox_throwable_model"
+					"value" "models/workshop/weapons/c_models/c_cake/plate_cake.mdl"
+				}				
+				"special taunt"
+				{
+					"attribute_class" "special_taunt"
+					"value" "1"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class" "allowed_in_medieval_mode"
+					"value" "1"
+				}
+				"mod lunchbox critboostable"
+				{
+					"attribute_class" 	"mod_lunchbox_critboostable"
+					"value"				"1"
+				}				
+			}
+		}
+		"8046"
+		{
+			"name" "The Jump Smasher"
+			"item_class" "tf_weapon_bat"
+			"show_in_armory" "1"
+			"item_type_name" "Racket"
+			"item_name" "Jump Smasher"
+			"item_description" "Its not badminton, it's goodminton. Heck, its great-minton!"
+			"item_slot" "melee"
+			"item_logname" "reflect_racket"
+			"item_iconname" "reflect_racket"
+			"item_quality" "Rarity2"
+			"image_inventory" "backpack\workshop\weapons\c_models\c_shuttleracket\c_shuttleracket"
+			"image_inventory_size_w" "128"
+			"image_inventory_size_h" "82"
+			"inspect_panel_dist" "55"
+			"model_player" "models\weapons\c_models\c_shuttleracket\c_shuttleracket.mdl"
+			"attach_to_hands" "1"
+			"min_ilevel" "10"
+			"max_ilevel" "10"
+			"propername" "1"
+			"used_by_classes"
+			{
+				"scout" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 0 -6"
+				"mod launches ball"  "20 136 5"
+			}
+			"mouse_pressed_sound" "ui/item_wood_pole_pickup.wav"
+			"drop_sound" "ui/item_wood_pole_drop.wav"
+			"attributes"
+			{
+				"jump smasher reflect VISUALONLY"
+				{
+					"attribute_class" "VISUALONLY"
+					"value" "1"
+				}
+				"jump smasher VISUALONLY"
+				{
+					"attribute_class" "VISUALONLY"
+					"value" "1"
+				}
+				"single wep deploy time decreased"
+				{
+					"attribute_class" "mult_single_wep_deploy_time"
+					"value" "0.5"
+				}
+                "weapon enemy knockback mod mult hidden"
+                {
+                    "attribute_class"    "weapon_enemy_knockback_mod"
+                    "value"                "0.25"
+                }				
+				"damage penalty"
+				{
+					"attribute_class" "mult_dmg"
+					"value" "0.70"
+				}
+				"apply z velocity on damage"
+				{
+					"attribute_class" "apply_z_velocity_on_damage"
+					"value" "0.4"
+				}					
+				"hidden separator"		"1"
+				"deflect on smack hidden"
+                {
+                    "attribute_class"    "deflect_on_smack"
+                    "value"                "1"
+                }			
+			}
+			"visuals"
+			{
+				"sound_melee_hit"		"Weapon_Fishwhacker.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_Fishwhacker.HitWorld"
+                "animation_replacement"
+                {
+                    "ACT_MP_ATTACK_STAND_MELEE"        "ACT_MP_ATTACK_STAND_MELEE_SECONDARY"
+                    "ACT_MP_ATTACK_CROUCH_MELEE"    "ACT_MP_ATTACK_CROUCH_MELEE_SECONDARY"
+                    "ACT_MP_ATTACK_SWIM_MELEE"        "ACT_MP_ATTACK_STAND_MELEE_SECONDARY"
+                }
+			}
+		}
 	}
 	"attributes"
 	{
@@ -13178,7 +13400,7 @@
 		{
 			"name"					"hubbard building condition textonly"
 			"attribute_class"		"VISUALONLY"
-			"description_string"	"Rain Hell: Gain 8 seconds of Revenge Mini-Crits when an enemy destroys a Lvl. 3 building of yours"
+			"description_string"	"Rain Hell: Gain 8 seconds of Haste when an enemy destroys a Lvl. 3 building of yours"
 			"description_format"	"value_is_additive"
 			"effect_type"			"positive"			
 		}
@@ -13206,5 +13428,44 @@
 			"description_format"	"value_is_additive"
 			"effect_type"			"positive"			
 		}
+		"4381"
+		{
+			"name"					"walkabout DISPLAY ONLY"
+			"attribute_class"		"mult_sniper_charge_base_dummy"
+			"description_string"	"No move speed penalty when scoped in"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4382"
+		{
+			"name"					"lunchbox force cooldown"
+			"attribute_class"		"lunchbox_force_cooldown"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"4383"
+		{
+			"name"					"walkabout scopedin"
+			"attribute_class"		"mult_sniper_charge_per_sec_with_enemy_under_crosshair"
+			"description_string"	"Damage charge only builds when an enemy is under the crosshair"			
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"4384"
+		{
+			"name"					"jump smasher VISUALONLY"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"Deals knockback to nearby enemies"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"			
+		}
+		"4385"
+		{
+			"name"					"jump smasher reflect VISUALONLY"
+			"attribute_class"		"VISUALONLY"
+			"description_string"	"Can reflect projectiles on swing"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"			
+		}			
 	}
 }
